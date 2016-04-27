@@ -1,0 +1,52 @@
+SOLID PRINCIPI
+1. Princip pojedinacne odgovornosti
+Princip glasi: "Klasa bi trebala imati samo jedan razlog za promjenu."
+Posmatrajuci klase zakljucujemo da je ovaj princip djelimicno zadovoljen prvenstveno zbog klase Parametri i klase Clan posade.
+Kod klase clan posade, metoda getAdresaStanovanja se može  izdvojiti u novu klasu jer se u buducnosti može nametnuti
+zahtjev da dodavanje drugih osoba osim clanova posade za koje moramo imati adresu stanovanja. Klasa Parametri posjeduje
+velik broj podataka koji se mogu razdvojiti na više podgrupa što bi osiguralo vecu sigurnost krucijalnih podataka za
+automatsko upravljanje leta.
+Ostale klase u zadovoljavajucem procentu poštuju pomenuti princip.
+
+
+2. Otvoreno zatvoreni princip
+Princip glasi: "Entiteti softvera trebali bi biti otvoreni za nadogradnju, ali zatvoreni za modifikacije."
+Sve klase posjeduju sebi specificne i neophodne metoda pa je ovaj princip ispoštovan.
+
+
+3. Liskov princip zamjene
+Princip glasi: "Podtipovi moraju biti zamjenljivi osnovnim tipovima."
+Liskov princip zamjene je zadovoljen za dijagram klasa projekta AircraftECS.
+
+
+4. Princip inverzije ovisnosti
+Princip glasi: "Moduli visokog nivoa ne bi trebali ovisiti od modula niskog nivoa, oba bi trebala da ovise od apstrakcija."
+Od petnaest klasa samo je jedna apstraktna i to je klasa Osoba. Ova klasa je neophodna za efikasno korištenje resursa
+jer u avionu postoji velik broj osoba koje treba razvrstati po nekoj metrici i sve klase koje predstavljaju ljude ovise
+od apstraktne klase osoba tako da je ovaj princip ispoštovan.
+
+
+5. Princip izoliranja interfejsa
+Princip glasi: "Klijenti ne treba da ovise o metodama koje nece upotrebljavati."
+Princip izoliranja interfejsa je lako uocljiv kod interfejsa ParametriSistema koji je i napravljen upravo radi pomenutog
+principa. Kako broj klasa nije veliki i klase su skoro pa trivijalne ovaja princip nije imao više udjela u našem dijagramu klasa.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
