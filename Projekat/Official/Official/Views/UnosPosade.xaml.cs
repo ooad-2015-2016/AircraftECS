@@ -26,5 +26,25 @@ namespace Official.Views
         {
             this.InitializeComponent();
         }
+
+        private void button_Click(System.Object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(UnosParametara));
+        }
+
+        private void textBox_TextChanged(System.Object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void passwordBox_PasswordChanged(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

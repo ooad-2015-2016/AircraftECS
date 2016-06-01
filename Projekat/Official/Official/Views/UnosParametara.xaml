@@ -8,6 +8,20 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Unesite zeljene parametre" VerticalAlignment="Top" Height="32" Width="270" FontSize="18.667" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBlock x:Name="Visina" HorizontalAlignment="Left" Margin="36,76,0,0" TextWrapping="Wrap" Text="Visina:" VerticalAlignment="Top" Height="21" Width="59" FontSize="16"/>
+        <TextBox x:Name="UnosVisine" HorizontalAlignment="Left" Margin="100,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="123" TextChanged="UnosVisine_TextChanged"/>
+        <TextBlock x:Name="Brzina" HorizontalAlignment="Left" Margin="36,129,0,0" TextWrapping="Wrap" Text="Brzina:" VerticalAlignment="Top"/>
+        <TextBox x:Name="UnosBrzine" HorizontalAlignment="Left" Margin="100,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="123" TextChanged="UnosBrzine_TextChanged"/>
+        <TextBlock x:Name="Kurs" HorizontalAlignment="Left" Margin="36,182,0,0" TextWrapping="Wrap" Text="Kurs:" VerticalAlignment="Top"/>
+        <TextBox x:Name="UnosKursa" HorizontalAlignment="Left" Margin="100,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="123" TextChanged="UnosKursa_TextChanged"/>
+        <TextBlock x:Name="UgaoKrila" HorizontalAlignment="Left" Margin="12,234,0,0" TextWrapping="Wrap" Text="UgaoKrila:" VerticalAlignment="Top"/>
+        <TextBox x:Name="UnosUgaoKrila" HorizontalAlignment="Left" Margin="100,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="123" TextChanged="UnosUgaoKrila_TextChanged"/>
+        <TextBlock x:Name="Temperatura" HorizontalAlignment="Left" Margin="299,76,0,0" TextWrapping="Wrap" Text="Temperatura:" VerticalAlignment="Top"/>
+        <TextBox x:Name="UnosTemperatura" HorizontalAlignment="Left" Margin="416,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="31" Width="123" TextChanged="UnosTemperatura_TextChanged"/>
+        <TextBlock x:Name="Pritisak" HorizontalAlignment="Left" Margin="334,133,0,0" TextWrapping="Wrap" Text="Pritisak:" VerticalAlignment="Top"/>
+        <TextBox x:Name="UnosPritisak" HorizontalAlignment="Left" Margin="416,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="123" TextChanged="UnosPritisak_TextChanged"/>
+        <Button x:Name="Pokretanje" Content="Pokreni" HorizontalAlignment="Left" Margin="500,222,0,0" VerticalAlignment="Top" Width="104" Click="Pokretanje_Click"/>
 
     </Grid>
 </Page>

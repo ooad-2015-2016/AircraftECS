@@ -26,5 +26,65 @@ namespace Official.Views
         {
             this.InitializeComponent();
         }
+
+        private void PrikazVisine_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void PrikazKursa_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void PrikazUgaoKrila_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void PrikazTemperatura_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void PrikazPritiska_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void PrikazBrzine_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void ProgressBar_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+
+        }
+
+        private void ProgressBar_ValueChanged_1(object sender, RangeBaseValueChangedEventArgs e)
+        {
+
+        }
+
+        private void ProgressBar_ValueChanged_2(object sender, RangeBaseValueChangedEventArgs e)
+        {
+
+        }
+
+        private void ProgressBar_ValueChanged_3(object sender, RangeBaseValueChangedEventArgs e)
+        {
+
+        }
+
+        private void ProgressBar_ValueChanged_4(object sender, RangeBaseValueChangedEventArgs e)
+        {
+
+        }
+
+        private void ProgressBar_ValueChanged_5(object sender, RangeBaseValueChangedEventArgs e)
+        {
+
+        }
     }
 }

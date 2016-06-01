@@ -26,5 +26,41 @@ namespace Official.Views
         {
             this.InitializeComponent();
         }
+
+        private void Pokretanje_Click(object sender, RoutedEventArgs e)
+        {
+            //Ovdje je potrebno ubaciti uslov tipa ako su uneseni svi parametri da ide na narednu komandu
+            this.Frame.Navigate(typeof(PrikazParametara));
+        }
+
+        private void UnosVisine_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void UnosBrzine_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void UnosKursa_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void UnosUgaoKrila_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void UnosTemperatura_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void UnosPritisak_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
