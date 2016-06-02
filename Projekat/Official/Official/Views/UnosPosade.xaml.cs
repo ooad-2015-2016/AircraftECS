@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,14 +23,25 @@ namespace Official.Views
     /// </summary>
     public sealed partial class UnosPosade : Page
     {
+        public static string ime = "Dino";
+        public static string prezime = "Zivojevic";
+        public static string ID = "5";
         public UnosPosade()
         {
             this.InitializeComponent();
         }
 
-        private void button_Click(System.Object sender, RoutedEventArgs e)
+        private async void button_Click(System.Object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(UnosParametara));
+            if (textBox.Text == ime && textBox1.Text == prezime && textBox2.Text == ID)
+            {
+                this.Frame.Navigate(typeof(UnosParametara));
+            }
+
+            else {
+                var d = new MessageDialog("Uneseni su neispravni parametri, pokusajte ponovo");
+                await d.ShowAsync();
+            }
         }
 
         private void textBox_TextChanged(System.Object sender, TextChangedEventArgs e)
@@ -50,6 +62,16 @@ namespace Official.Views
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Help));
+        }
+
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

@@ -22,7 +22,7 @@
         <TextBlock x:Name="Pritisak" HorizontalAlignment="Left" Margin="17,342,0,0" TextWrapping="Wrap" Text="Pritisak" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
         <TextBox x:Name="UnosPritisak" HorizontalAlignment="Left" Margin="173,342,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="86" TextChanged="UnosPritisak_TextChanged"/>
         <Button x:Name="Pokretanje" Content="Next" HorizontalAlignment="Left" Margin="342,394,0,0" VerticalAlignment="Top" Width="104" Click="Pokretanje_Click"/>
-        <Button x:Name="button" Content="HELP" HorizontalAlignment="Left" Margin="470,395,0,0" VerticalAlignment="Top" Click="button_Click"/>
+        <Button x:Name="button" Content="HELP" HorizontalAlignment="Left" Margin="539,457,0,0" VerticalAlignment="Top" Click="button_Click"/>
         <Image x:Name="image" Source="/Assets/slika3.png" HorizontalAlignment="Left" Height="207" Margin="393,113,0,0" VerticalAlignment="Top" Width="200" RenderTransformOrigin="2.771,-0.052"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="173,400,0,0" TextWrapping="Wrap" Text="Nastavak" VerticalAlignment="Top" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Height="32" Width="128"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="277,64,0,0" TextWrapping="Wrap" Text="metara" VerticalAlignment="Top" FontSize="18.667" FontStyle="Italic"/>
@@ -30,6 +30,7 @@
         <TextBlock x:Name="textBlock2_Copy1" HorizontalAlignment="Left" Margin="277,223,0,0" TextWrapping="Wrap" Text="stepeni [°]" VerticalAlignment="Top" FontSize="18.667" FontStyle="Italic"/>
         <TextBlock x:Name="textBlock2_Copy2" HorizontalAlignment="Left" Margin="277,295,0,0" TextWrapping="Wrap" Text="°C" VerticalAlignment="Top" FontSize="18.667" FontStyle="Italic"/>
         <TextBlock x:Name="textBlock2_Copy3" HorizontalAlignment="Left" Margin="277,348,0,0" TextWrapping="Wrap" Text="bara" VerticalAlignment="Top" FontSize="18.667" FontStyle="Italic"/>
+        <Button x:Name="button1" Content="Odjava" HorizontalAlignment="Left" Margin="489,393,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.508,0.5" Height="33" Width="104" Click="button1_Click"/>
 
     </Grid>
 </Page>

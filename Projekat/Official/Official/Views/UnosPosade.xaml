@@ -12,16 +12,16 @@
             <RowDefinition Height="287*"/>
             <RowDefinition Height="353*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="button" Content="Next" HorizontalAlignment="Left" Margin="312,283,0,0" VerticalAlignment="Top" Height="36" Width="69" Click="button_Click" Grid.RowSpan="2"/>
+        <Button x:Name="button" Content="Prijava" HorizontalAlignment="Left" Margin="312,283,0,0" VerticalAlignment="Top" Height="36" Width="69" Click="button_Click" Grid.RowSpan="2"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,30,0,0" TextWrapping="Wrap" Text="Ime" VerticalAlignment="Top" Height="27" Width="78" FontSize="21.333" FontWeight="Bold"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,91,0,0" TextWrapping="Wrap" Text="Prezime" VerticalAlignment="Top" FontSize="21.333" FontWeight="Bold"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="111,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" TextChanged="textBox_TextChanged"/>
         <Image x:Name="image" Source="/Assets/slika4.jpg" HorizontalAlignment="Left" Height="217" Margin="266,0,0,0" VerticalAlignment="Top" Width="259"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="105,187,0,0" VerticalAlignment="Top" Width="161" Height="30" SelectionChanged="comboBox_SelectionChanged" RequestedTheme="Dark"/>
         <Button x:Name="button1" Content="HELP" HorizontalAlignment="Left" Margin="423,286,0,0" VerticalAlignment="Top" Click="button1_Click" Grid.RowSpan="2"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="107,85,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="32" Width="159"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="107,85,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="32" Width="159" TextChanged="textBox1_TextChanged"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="10,140,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" FontSize="21.333" FontWeight="Bold" FontStyle="Italic"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="107,136,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="107,136,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextChanged="textBox2_TextChanged"/>
         <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="11,187,0,0" TextWrapping="Wrap" Text="Položaj" VerticalAlignment="Top" FontSize="21.333" FontWeight="Bold"/>
         <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="21,3,0,0" TextWrapping="Wrap" Text="Nastavak" VerticalAlignment="Top" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Height="24" Width="138" Grid.Row="1"/>
 

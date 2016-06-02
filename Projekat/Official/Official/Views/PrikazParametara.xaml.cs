@@ -91,5 +91,10 @@ namespace Official.Views
         {
             Frame.Navigate(typeof(Help));
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(UnosParametara));
+        }
     }
 }

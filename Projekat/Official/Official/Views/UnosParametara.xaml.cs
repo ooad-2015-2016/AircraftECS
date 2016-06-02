@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -27,10 +28,18 @@ namespace Official.Views
             this.InitializeComponent();
         }
 
-        private void Pokretanje_Click(object sender, RoutedEventArgs e)
+        private async void Pokretanje_Click(object sender, RoutedEventArgs e)
         {
             //Ovdje je potrebno ubaciti uslov tipa ako su uneseni svi parametri da ide na narednu komandu
-            this.Frame.Navigate(typeof(PrikazParametara));
+            if (UnosVisine.Text != "" && UnosBrzine.Text != "" && UnosKursa.Text != "" && UnosUgaoKrila.Text != "" && UnosTemperatura.Text != "" && UnosPritisak.Text != "") {
+
+                this.Frame.Navigate(typeof(PrikazParametara));
+            }
+            
+            else {
+                var b = new MessageDialog("Moraju se unijeti svi zeljeni parametri");
+                await b.ShowAsync();
+            }
         }
 
         private void UnosVisine_TextChanged(object sender, TextChangedEventArgs e)
@@ -66,6 +75,11 @@ namespace Official.Views
         private void button_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Help));
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(UnosPosade));
         }
     }
 }

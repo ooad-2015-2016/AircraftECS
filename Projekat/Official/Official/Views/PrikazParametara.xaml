@@ -29,6 +29,7 @@
         <ProgressBar HorizontalAlignment="Left" Height="32" Margin="292,318,0,0" VerticalAlignment="Top" Width="73" ValueChanged="ProgressBar_ValueChanged_5"/>
         <Image x:Name="image" Source="/Assets/slika5.jpg" HorizontalAlignment="Left" Height="239" Margin="409,58,0,0" VerticalAlignment="Top" Width="213"/>
         <Button x:Name="button" Content="HELP" HorizontalAlignment="Left" Margin="462,320,0,0" VerticalAlignment="Top" Click="button_Click"/>
+        <Button x:Name="button1" Content="BACK" HorizontalAlignment="Left" Margin="547,320,0,0" VerticalAlignment="Top" Click="button1_Click"/>
 
     </Grid>
 </Page>
