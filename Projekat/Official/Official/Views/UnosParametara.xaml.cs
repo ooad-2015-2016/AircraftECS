@@ -62,5 +62,10 @@ namespace Official.Views
         {
 
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Help));
+        }
     }
 }
