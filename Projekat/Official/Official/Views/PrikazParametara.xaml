@@ -8,27 +8,27 @@
     mc:Ignorable="d" Width="621.667">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="36,10,0,0" TextWrapping="Wrap" Text="Prikaz parametara" VerticalAlignment="Top" Height="24" Width="179" FontSize="18.667" FontStyle="Italic" FontWeight="Bold"/>
-        <ProgressBar HorizontalAlignment="Left" Height="32" Margin="272,58,0,0" VerticalAlignment="Top" Width="73" ValueChanged="ProgressBar_ValueChanged"/>
-        <TextBlock x:Name="Brzina1" HorizontalAlignment="Left" Margin="36,70,0,0" TextWrapping="Wrap" Text="Brzina:" VerticalAlignment="Top"/>
-        <TextBox x:Name="PrikazBrzine" HorizontalAlignment="Left" Margin="111,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" TextChanged="PrikazBrzine_TextChanged"/>
-        <TextBlock x:Name="Visina1" HorizontalAlignment="Left" Margin="38,122,0,0" TextWrapping="Wrap" Text="Visina:" VerticalAlignment="Top"/>
-        <TextBox x:Name="PrikazVisine" HorizontalAlignment="Left" Margin="111,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" TextChanged="PrikazVisine_TextChanged"/>
-        <ProgressBar HorizontalAlignment="Left" Height="32" Margin="272,110,0,0" VerticalAlignment="Top" Width="73" ValueChanged="ProgressBar_ValueChanged_1"/>
-        <TextBlock x:Name="Kurs1" HorizontalAlignment="Left" Margin="48,174,0,0" TextWrapping="Wrap" Text="Kurs:" VerticalAlignment="Top"/>
-        <TextBox x:Name="PrikazKursa" HorizontalAlignment="Left" Margin="111,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" TextChanged="PrikazKursa_TextChanged"/>
-        <ProgressBar HorizontalAlignment="Left" Height="32" Margin="272,162,0,0" VerticalAlignment="Top" Width="73" ValueChanged="ProgressBar_ValueChanged_2"/>
-        <TextBlock x:Name="UgaoKrila1" HorizontalAlignment="Left" Margin="10,226,0,0" TextWrapping="Wrap" Text="Ugao krila:" VerticalAlignment="Top"/>
-        <TextBox x:Name="PrikazUgaoKrila" HorizontalAlignment="Left" Margin="111,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" TextChanged="PrikazUgaoKrila_TextChanged"/>
-        <ProgressBar HorizontalAlignment="Left" Height="32" Margin="272,214,0,0" VerticalAlignment="Top" Width="73" ValueChanged="ProgressBar_ValueChanged_3"/>
-        <TextBlock x:Name="Temperatura1" HorizontalAlignment="Left" Margin="10,277,0,0" TextWrapping="Wrap" Text="Temperatura:" VerticalAlignment="Top"/>
-        <TextBox x:Name="PrikazTemperatura" HorizontalAlignment="Left" Margin="111,265,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" TextChanged="PrikazTemperatura_TextChanged"/>
-        <ProgressBar HorizontalAlignment="Left" Height="32" Margin="272,265,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="-0.5,0" ValueChanged="ProgressBar_ValueChanged_4"/>
-        <TextBlock x:Name="Pritisak1" HorizontalAlignment="Left" Margin="36,330,0,0" TextWrapping="Wrap" Text="Pritisak:" VerticalAlignment="Top"/>
-        <TextBox x:Name="PrikazPritiska" HorizontalAlignment="Left" Margin="111,318,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" TextChanged="PrikazPritiska_TextChanged"/>
-        <ProgressBar HorizontalAlignment="Left" Height="32" Margin="272,318,0,0" VerticalAlignment="Top" Width="73" ValueChanged="ProgressBar_ValueChanged_5"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="292" Margin="409,58,0,0" VerticalAlignment="Top" Width="194"/>
-        <Button x:Name="button" Content="HELP" HorizontalAlignment="Left" Margin="272,385,0,0" VerticalAlignment="Top" Click="button_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="36,10,0,0" TextWrapping="Wrap" Text="Prikaz parametara" VerticalAlignment="Top" Height="43" Width="290" FontSize="26.667" FontStyle="Italic" FontWeight="Bold"/>
+        <ProgressBar HorizontalAlignment="Left" Height="32" Margin="292,58,0,0" VerticalAlignment="Top" Width="73" ValueChanged="ProgressBar_ValueChanged"/>
+        <TextBlock x:Name="Brzina1" HorizontalAlignment="Left" Margin="11,55,0,0" TextWrapping="Wrap" Text="Brzina" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <TextBox x:Name="PrikazBrzine" HorizontalAlignment="Left" Margin="156,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" TextChanged="PrikazBrzine_TextChanged"/>
+        <TextBlock x:Name="Visina1" HorizontalAlignment="Left" Margin="13,107,0,0" TextWrapping="Wrap" Text="Visina" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <TextBox x:Name="PrikazVisine" HorizontalAlignment="Left" Margin="156,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" TextChanged="PrikazVisine_TextChanged"/>
+        <ProgressBar HorizontalAlignment="Left" Height="32" Margin="292,110,0,0" VerticalAlignment="Top" Width="73" ValueChanged="ProgressBar_ValueChanged_1"/>
+        <TextBlock x:Name="Kurs1" HorizontalAlignment="Left" Margin="13,164,0,0" TextWrapping="Wrap" Text="Kurs" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <TextBox x:Name="PrikazKursa" HorizontalAlignment="Left" Margin="156,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" TextChanged="PrikazKursa_TextChanged"/>
+        <ProgressBar HorizontalAlignment="Left" Height="32" Margin="292,162,0,0" VerticalAlignment="Top" Width="73" ValueChanged="ProgressBar_ValueChanged_2"/>
+        <TextBlock x:Name="UgaoKrila1" HorizontalAlignment="Left" Margin="10,211,0,0" TextWrapping="Wrap" Text="Ugao krila" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <TextBox x:Name="PrikazUgaoKrila" HorizontalAlignment="Left" Margin="156,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" TextChanged="PrikazUgaoKrila_TextChanged"/>
+        <ProgressBar HorizontalAlignment="Left" Height="32" Margin="292,214,0,0" VerticalAlignment="Top" Width="73" ValueChanged="ProgressBar_ValueChanged_3"/>
+        <TextBlock x:Name="Temperatura1" HorizontalAlignment="Left" Margin="10,267,0,0" TextWrapping="Wrap" Text="Temperatura" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <TextBox x:Name="PrikazTemperatura" HorizontalAlignment="Left" Margin="156,265,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" TextChanged="PrikazTemperatura_TextChanged"/>
+        <ProgressBar HorizontalAlignment="Left" Height="32" Margin="292,265,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="-0.5,0" ValueChanged="ProgressBar_ValueChanged_4"/>
+        <TextBlock x:Name="Pritisak1" HorizontalAlignment="Left" Margin="16,320,0,0" TextWrapping="Wrap" Text="Pritisak" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <TextBox x:Name="PrikazPritiska" HorizontalAlignment="Left" Margin="156,318,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" TextChanged="PrikazPritiska_TextChanged"/>
+        <ProgressBar HorizontalAlignment="Left" Height="32" Margin="292,318,0,0" VerticalAlignment="Top" Width="73" ValueChanged="ProgressBar_ValueChanged_5"/>
+        <Image x:Name="image" Source="/Assets/slika5.jpg" HorizontalAlignment="Left" Height="239" Margin="409,58,0,0" VerticalAlignment="Top" Width="213"/>
+        <Button x:Name="button" Content="HELP" HorizontalAlignment="Left" Margin="462,320,0,0" VerticalAlignment="Top" Click="button_Click"/>
 
     </Grid>
 </Page>

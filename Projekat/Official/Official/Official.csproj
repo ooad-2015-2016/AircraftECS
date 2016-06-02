@@ -138,6 +138,9 @@
   <ItemGroup>
     <Content Include="Assets\slika1.jpg" />
     <Content Include="Assets\slika2.jpg" />
+    <Content Include="Assets\slika3.png" />
+    <Content Include="Assets\slika4.jpg" />
+    <Content Include="Assets\slika5.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
