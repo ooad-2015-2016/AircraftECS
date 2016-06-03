@@ -23,7 +23,7 @@ namespace Official.Models
         public double ProcitajBrzinu() { return brzina; }
         public void PostaviKurs(double k) { kurs = k; }
         public double ProcitajKurs() { return kurs; }
-        public void PostaviUgaoKrila(double u) { ugaoKrila = u; }
+        public void PostaviUgaoKrila(int u) { ugaoKrila = u; }
         public int ProcitajUgaoKrila() { return ugaoKrila; }
         public void PostaviTemperaturu(double t) { temperatura = t; }
         public double ProcitajTemperaturu() { return temperatura; }
