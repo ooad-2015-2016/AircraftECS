@@ -32,6 +32,7 @@ namespace Official
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
             using (var db = new ClanPosadeDbContext())
             {
                 db.Database.ApplyMigrations();
