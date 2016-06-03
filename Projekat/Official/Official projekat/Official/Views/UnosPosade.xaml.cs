@@ -35,13 +35,25 @@ namespace Official.Views
         {
             if (textBox.Text == ime && textBox1.Text == prezime && textBox2.Text == ID)
             {
+                if((comboBox.SelectedItem as ComboBoxItem).Content.ToString() == "Pilot")
                 this.Frame.Navigate(typeof(UnosParametara));
+
+                else if((comboBox.SelectedItem as ComboBoxItem).Content.ToString() == "Stjuardesa")
+                    this.Frame.Navigate(typeof(PrikazParametara));
+
+                // Jos uvijek je nemoguce da se ostavi prazan odabir comboBoxa, potrebno je popraviti to
+               /* else if((comboBox.SelectedItem as ComboBoxItem).Content.ToString() == "")
+                {
+                    var d = new MessageDialog("Morate odabrati polozaj");
+                    await d.ShowAsync();
+                } */
             }
 
             else {
                 var d = new MessageDialog("Uneseni su neispravni parametri, pokusajte ponovo");
                 await d.ShowAsync();
             }
+            
         }
 
         private void textBox_TextChanged(System.Object sender, TextChangedEventArgs e)
@@ -56,7 +68,7 @@ namespace Official.Views
 
         private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
