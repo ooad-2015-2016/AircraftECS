@@ -35,18 +35,19 @@ namespace Official.Views
         {
             if (textBox.Text == ime && textBox1.Text == prezime && textBox2.Text == ID)
             {
-                if((comboBox.SelectedItem as ComboBoxItem).Content.ToString() == "Pilot")
+
+                if (comboBox.SelectedItem == null)
+                {
+                    var d = new MessageDialog("Morate odabrati polozaj");
+                    await d.ShowAsync();
+                }
+
+                else if ((comboBox.SelectedItem as ComboBoxItem).Content.ToString() == "Pilot")
                 this.Frame.Navigate(typeof(UnosParametara));
 
                 else if((comboBox.SelectedItem as ComboBoxItem).Content.ToString() == "Stjuardesa")
                     this.Frame.Navigate(typeof(PrikazParametara));
-
-                // Jos uvijek je nemoguce da se ostavi prazan odabir comboBoxa, potrebno je popraviti to
-               /* else if((comboBox.SelectedItem as ComboBoxItem).Content.ToString() == "")
-                {
-                    var d = new MessageDialog("Morate odabrati polozaj");
-                    await d.ShowAsync();
-                } */
+    
             }
 
             else {
