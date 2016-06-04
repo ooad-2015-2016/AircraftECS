@@ -33,7 +33,7 @@ namespace Official.Views
 
         private async void button_Click(System.Object sender, RoutedEventArgs e)
         {
-            if (textBox.Text == ime && textBox1.Text == prezime && textBox2.Text == ID)
+            if (Official.ViewModels.ProvjeritiKorisnika.PostojiLi(textBox.Text,textBox1.Text,textBox2.Text))
             {
 
                 if (comboBox.SelectedItem == null)
@@ -85,6 +85,11 @@ namespace Official.Views
         private void textBox2_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(BlankPage1));
         }
     }
 }
