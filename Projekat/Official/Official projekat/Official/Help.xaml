@@ -10,9 +10,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,0,0.333">
         <Image x:Name="image" Source="/Assets/slika2.jpg" HorizontalAlignment="Left" Height="371" VerticalAlignment="Top" Width="516" Margin="20,0,0,0"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,601,0,-7" TextWrapping="Wrap" Text="Idi na " VerticalAlignment="Top" FontSize="48" Width="122"/>
-        <Button x:Name="button" Content="Unos Posade" HorizontalAlignment="Left" Margin="137,623,0,0" VerticalAlignment="Top" Click="button_Click"/>
-        <Button x:Name="button1" Content="Unos Parametara" HorizontalAlignment="Left" Margin="248,623,0,0" VerticalAlignment="Top" Click="button1_Click"/>
-        <Button x:Name="button2" Content="Pregled Parametara" HorizontalAlignment="Left" Margin="386,623,0,0" VerticalAlignment="Top" Click="button2_Click"/>
+        <Button x:Name="button" Content="Unos Posade" HorizontalAlignment="Left" Margin="185,623,0,0" VerticalAlignment="Top" Click="button_Click"/>
         <Button x:Name="button3" Content="Main Page" HorizontalAlignment="Left" Margin="446,376,0,0" VerticalAlignment="Top" Click="button3_Click"/>
         <RichTextBlock HorizontalAlignment="Left" Height="143" Margin="10,475,0,0" VerticalAlignment="Top" Width="541">
             <Paragraph>

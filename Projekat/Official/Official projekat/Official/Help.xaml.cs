@@ -35,16 +35,6 @@ namespace Official
         private void button_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Views.UnosPosade));
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Views.UnosParametara));
-        }
-
-        private void button2_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Views.PrikazParametara));
-        }
+        } 
     }
 }
