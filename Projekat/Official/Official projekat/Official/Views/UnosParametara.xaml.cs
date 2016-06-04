@@ -33,7 +33,15 @@ namespace Official.Views
             //Ovdje je potrebno ubaciti uslov tipa ako su uneseni svi parametri da ide na narednu komandu
             if (UnosVisine.Text != "" && UnosBrzine.Text != "" && UnosKursa.Text != "" && UnosUgaoKrila.Text != "" && UnosTemperatura.Text != "" && UnosPritisak.Text != "") {
 
- 
+                //Ako su uneseni svi zeljeni parametri njihova vrijednost se konvertuje i spasava u bazu za parametre
+                double brz = Convert.ToDouble(UnosBrzine.Text);
+                double vis = Convert.ToDouble(UnosVisine.Text);
+                double kur = Convert.ToDouble(UnosKursa.Text);
+                double uK = Convert.ToDouble(UnosUgaoKrila.Text);
+                double tem = Convert.ToDouble(UnosTemperatura.Text);
+                double pri = Convert.ToDouble(UnosPritisak.Text);
+                Official.ViewModels.UnosParametaraViewModel.Dodaj(vis, brz, kur, uK, tem, pri);
+                //Nakon toga prelazi se na novu stranicu za prikazivanje parametara
                 this.Frame.Navigate(typeof(PrikazParametara));
             }
 

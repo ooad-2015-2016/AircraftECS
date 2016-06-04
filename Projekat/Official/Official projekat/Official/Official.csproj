@@ -110,6 +110,7 @@
     </Compile>
     <Compile Include="Migrations\ClanPosadeDbContextModelSnapshot.cs" />
     <Compile Include="Models\Alarm.cs" />
+    <Compile Include="Models\BazaParametara.cs" />
     <Compile Include="Models\DataSource.cs" />
     <Compile Include="Models\Korisnik.cs" />
     <Compile Include="Models\KursLeta.cs" />

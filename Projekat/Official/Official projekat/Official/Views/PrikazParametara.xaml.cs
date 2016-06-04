@@ -59,7 +59,7 @@ namespace Official.Views
 
         private void ProgressBar_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
-
+                  
         }
 
         private void ProgressBar_ValueChanged_1(object sender, RangeBaseValueChangedEventArgs e)
@@ -95,6 +95,19 @@ namespace Official.Views
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(UnosPosade));
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            //Official.ViewModels.Arduino kontrola = new ViewModels.Arduino();
+            Official.ViewModels.UnosParametaraViewModel var = new ViewModels.UnosParametaraViewModel();
+            PrikazBrzine.Text = Official.ViewModels.UnosParametaraViewModel.DajBrzinu().ToString();
+            PrikazVisine.Text = Official.ViewModels.UnosParametaraViewModel.DajVisinu().ToString();
+            PrikazKursa.Text = Official.ViewModels.UnosParametaraViewModel.DajKurs().ToString();
+            PrikazUgaoKrila.Text = Official.ViewModels.UnosParametaraViewModel.DajUgaoKrila().ToString();
+            PrikazTemperatura.Text = Official.ViewModels.UnosParametaraViewModel.DajTemperaturu().ToString();
+            PrikazPritiska.Text = Official.ViewModels.UnosParametaraViewModel.DajPritisak().ToString();
+
         }
     }
 }

@@ -8,12 +8,12 @@ namespace Official.Models
 {
     class Parametri
     {
-        private double visina;
-        private double brzina;
-        private double kurs;
-        private int ugaoKrila;
-        private double temperatura;
-        private double pritisak;
+        public double visina;
+        public double brzina;
+        public double kurs;
+        public double ugaoKrila;
+        public double temperatura;
+        public double pritisak;
 
         
         public Parametri() { visina = 0; brzina = 0; kurs = 0; ugaoKrila = 0; }
@@ -24,7 +24,7 @@ namespace Official.Models
         public void PostaviKurs(double k) { kurs = k; }
         public double ProcitajKurs() { return kurs; }
         public void PostaviUgaoKrila(int u) { ugaoKrila = u; }
-        public int ProcitajUgaoKrila() { return ugaoKrila; }
+        public double ProcitajUgaoKrila() { return ugaoKrila; }
         public void PostaviTemperaturu(double t) { temperatura = t; }
         public double ProcitajTemperaturu() { return temperatura; }
         public void PostaviPritisak(double p) { pritisak = p; }
