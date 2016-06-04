@@ -33,8 +33,10 @@ namespace Official.Views
             //Ovdje je potrebno ubaciti uslov tipa ako su uneseni svi parametri da ide na narednu komandu
             if (UnosVisine.Text != "" && UnosBrzine.Text != "" && UnosKursa.Text != "" && UnosUgaoKrila.Text != "" && UnosTemperatura.Text != "" && UnosPritisak.Text != "") {
 
+ 
                 this.Frame.Navigate(typeof(PrikazParametara));
             }
+
             
             else {
                 var b = new MessageDialog("Moraju se unijeti svi zeljeni parametri");

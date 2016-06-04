@@ -15,6 +15,7 @@ namespace Official.Models
                 Ime = "Dino",
                 Prezime = "Zivojevic",
                 ID = "1",
+                Funkcija = "Pilot",
             },
 
            new Korisnik()
@@ -22,6 +23,7 @@ namespace Official.Models
             Ime = "Bilal",
             Prezime = "Sehovic",
             ID = "2",
+            Funkcija = "Pilot",
            },
 
            new Korisnik()
@@ -29,6 +31,7 @@ namespace Official.Models
                Ime = "Harun",
                Prezime = "Dizdar",
                ID = "3",
+               Funkcija = "Pilot",
            },
 
            new Korisnik()
@@ -36,6 +39,7 @@ namespace Official.Models
                Ime = "Meliha",
                Prezime = "Mesanovic",
                ID = "4",
+               Funkcija = "Stjuardesa",
            }
         };
 
@@ -49,17 +53,17 @@ namespace Official.Models
             return Korisnici.Where(k => k.ID.Equals(ID)).FirstOrDefault();
         }
 
-        public static Korisnik ProvjeraKorisnika(string korisnickoIme, string Prezime, string ID)
+        public static Korisnik ProvjeraKorisnika(string korisnickoIme, string Prezime, string ID, string funkcija)
         {
             Korisnik rezultat = new Korisnik();
             foreach (var k in DajSveKorisnike())
             {
-                if (k.Ime == korisnickoIme && k.Prezime == Prezime && k.ID == ID) rezultat = k;
+                if (k.Ime == korisnickoIme && k.Prezime == Prezime && k.ID == ID && k.Funkcija == funkcija) rezultat = k;
             }
             return rezultat;
         }
 
-        public static void DodajKorisnika(string ime, string prezime, string id)
+        public static void DodajKorisnika(string ime, string prezime, string id, string funkcija)
         {
             DajSveKorisnike().Add(new Korisnik());
             int i = DajSveKorisnike().Count;
@@ -67,6 +71,7 @@ namespace Official.Models
             DajSveKorisnike()[i - 1].Ime = ime;
             DajSveKorisnike()[i - 1].Prezime = prezime;
             DajSveKorisnike()[i - 1].ID = id;
+            DajSveKorisnike()[i - 1].Funkcija = funkcija;
         }
 
     }

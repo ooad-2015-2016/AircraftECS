@@ -126,6 +126,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AlarmViewModel.cs" />
+    <Compile Include="ViewModels\Arduino.cs" />
     <Compile Include="ViewModels\PrikazParametaraViewModel.cs" />
     <Compile Include="ViewModels\ProvjeritiKorisnika.cs" />
     <Compile Include="ViewModels\UnosParametaraViewModel.cs" />

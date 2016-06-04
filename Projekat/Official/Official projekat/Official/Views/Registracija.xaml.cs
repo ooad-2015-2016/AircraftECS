@@ -30,7 +30,14 @@ namespace Official.Views
 
         private async void button_Click(object sender, RoutedEventArgs e)
         {
-            if (Official.ViewModels.ProvjeritiKorisnika.PostojiLi(RegistrujIme.Text, RegistrujPrezime.Text, RegistrujID.Text))
+
+            if (comboBox.SelectedItem == null)
+            {
+                var d = new MessageDialog("Morate odabrati polozaj");
+                await d.ShowAsync();
+            }
+
+            else if (Official.ViewModels.ProvjeritiKorisnika.PostojiLi(RegistrujIme.Text, RegistrujPrezime.Text, RegistrujID.Text, (comboBox.SelectedItem as ComboBoxItem).Content.ToString()))
             {
                 var d = new MessageDialog("Vec postoji korisnik sa zadanim podacima");
                 await d.ShowAsync();
@@ -38,7 +45,7 @@ namespace Official.Views
 
             else
             {
-                Official.ViewModels.ProvjeritiKorisnika.Dodaj(RegistrujIme.Text, RegistrujPrezime.Text, RegistrujID.Text);
+                Official.ViewModels.ProvjeritiKorisnika.Dodaj(RegistrujIme.Text, RegistrujPrezime.Text, RegistrujID.Text, (comboBox.SelectedItem as ComboBoxItem).Content.ToString());
                 var d = new MessageDialog("Uspjesno ste registrovani");
                 await d.ShowAsync();
             }
@@ -63,6 +70,11 @@ namespace Official.Views
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(UnosPosade));
+        }
+
+        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

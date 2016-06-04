@@ -23,9 +23,9 @@ namespace Official.Views
     /// </summary>
     public sealed partial class UnosPosade : Page
     {
-        public static string ime = "Dino";
+        /*public static string ime = "Dino";
         public static string prezime = "Zivojevic";
-        public static string ID = "5";
+        public static string ID = "5"; */
         public UnosPosade()
         {
             this.InitializeComponent();
@@ -33,20 +33,24 @@ namespace Official.Views
 
         private async void button_Click(System.Object sender, RoutedEventArgs e)
         {
-            if (Official.ViewModels.ProvjeritiKorisnika.PostojiLi(textBox.Text,textBox1.Text,textBox2.Text))
+
+            if (comboBox.SelectedItem == null)
             {
+                var d = new MessageDialog("Morate odabrati polozaj");
+                await d.ShowAsync();
+            }
 
-                if (comboBox.SelectedItem == null)
-                {
-                    var d = new MessageDialog("Morate odabrati polozaj");
-                    await d.ShowAsync();
-                }
+            else if (Official.ViewModels.ProvjeritiKorisnika.PostojiLi(textBox.Text, textBox1.Text, textBox2.Text, (comboBox.SelectedItem as ComboBoxItem).Content.ToString()))
+            {
+            
 
-                else if ((comboBox.SelectedItem as ComboBoxItem).Content.ToString() == "Pilot")
+
+
+            if ((comboBox.SelectedItem as ComboBoxItem).Content.ToString() == "Pilot")
                 this.Frame.Navigate(typeof(UnosParametara));
 
-                else if((comboBox.SelectedItem as ComboBoxItem).Content.ToString() == "Stjuardesa")
-                    this.Frame.Navigate(typeof(PrikazParametara));
+            else if ((comboBox.SelectedItem as ComboBoxItem).Content.ToString() == "Stjuardesa")
+                this.Frame.Navigate(typeof(PrikazParametara));
     
             }
 

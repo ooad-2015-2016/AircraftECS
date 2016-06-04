@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Official.ViewModels
 {
-    class UnosParametaraViewModel
+    class Arduino
     {
 
     }

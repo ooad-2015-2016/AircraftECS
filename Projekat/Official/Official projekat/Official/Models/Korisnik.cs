@@ -11,8 +11,9 @@ namespace Official.Models
         public string Ime { get; set; }
         public string Prezime { get; set; }
         public string ID { get; set; }
+        public string Funkcija { get; set; }
 
-        public Korisnik() { Ime = "Neki"; Prezime = "Korisnik"; ID = "999"; }
+        public Korisnik() { Ime = "Neki"; Prezime = "Korisnik"; ID = "999"; Funkcija = "Bezveze"; }
 
     }
 }
