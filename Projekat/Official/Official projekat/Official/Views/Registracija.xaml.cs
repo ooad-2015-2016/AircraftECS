@@ -37,6 +37,12 @@ namespace Official.Views
                 await d.ShowAsync();
             }
 
+            else if(RegistrujIme.Text =="" || RegistrujPrezime.Text =="" || RegistrujID.Text == "" )
+            {
+                var d = new MessageDialog("Svi podaci moraju biti uneseni");
+                await d.ShowAsync();
+            }
+
             else if (Official.ViewModels.ProvjeritiKorisnika.PostojiLi(RegistrujIme.Text, RegistrujPrezime.Text, RegistrujID.Text, (comboBox.SelectedItem as ComboBoxItem).Content.ToString()))
             {
                 var d = new MessageDialog("Vec postoji korisnik sa zadanim podacima");
