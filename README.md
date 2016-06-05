@@ -74,25 +74,25 @@ dozvoljava polijetanje aviona tek kada je svaki od putnika vezan sigurnosnim poj
 
 ##Spisak zadataka za projekat
 
-1. ##Eksterni uredjaj
+##1.Eksterni uredjaj
 
    Kao eksterni uredjaj koristen je Arduino UNO (Napon sa potenciometra se dovodi na analogni ulaz arduina, koji salje podatke
    aplikaciji i na osnovu prekoracene dozvoljene vrijednosti napona aplikacija prijavljuje gresku i pali diodu) - 
    - Kod u Visual studio: (https://github.com/ooad-2015-2016/AircraftECS/blob/master/Projekat/Official/Official%20projekat/Official/Views/PrikazParametara.xaml.cs)
    - Kod napisan u Arduino okruzenju: (https://github.com/ooad-2015-2016/AircraftECS/blob/master/Projekat/Official/Official%20projekat/Arduino_kod_za_projekat.txt)
 
-2. ##Validacija
+##2.Validacija
    
    Validacija je ispostovana u okviru formi za unos posade, unos parametara i registraciju novih korisnika:
    - (https://github.com/ooad-2015-2016/AircraftECS/blob/master/Projekat/Official/Official%20projekat/Official/Views/UnosPosade.xaml.cs)
    - (https://github.com/ooad-2015-2016/AircraftECS/blob/master/Projekat/Official/Official%20projekat/Official/Views/UnosParametara.xaml.cs)
    - (https://github.com/ooad-2015-2016/AircraftECS/blob/master/Projekat/Official/Official%20projekat/Official/Views/Registracija.xaml.cs)
 
-3. ##Prilagodjavanje windows phone
+##3.Prilagodjavanje windows phone
 
    Nije uradjeno, aplikacija nije predvidjena za windows phone
 
-4. ##Video
+4##.Video
 
    Video se moze pogledati [ovdje] (https://www.youtube.com/watch?v=q8Bvlak529k)
 
