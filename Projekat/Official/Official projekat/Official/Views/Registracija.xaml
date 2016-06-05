@@ -7,8 +7,44 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Grid x:Name="RegistracijaGrid" ScrollViewer.VerticalScrollBarVisibility="Auto">
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="145,35,0,0" TextWrapping="Wrap" Text="Registracija novih korisnika" VerticalAlignment="Top" Height="35" Width="367" FontSize="26.667" FontWeight="Bold" FontStyle="Italic"/>
+
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup>
+                    <VisualState x:Name="WideState">
+                        <VisualState.StateTriggers>
+                            <AdaptiveTrigger MinWindowWidth="720" />
+                        </VisualState.StateTriggers>
+                        <VisualState.Setters>
+                            <Setter Target="RegistracijaGrid.Margin" Value="0"/>
+                            <Setter Target="RegistracijaGrid.RowDefinitions[1].Height" Value="auto"/>
+                            <Setter Target="RegistracijaGrid.ColumnDefinitions[1].Width" Value="*"/>
+                            <Setter Target="FirstGrid.Margin" Value="0 0 0 0"/>
+                            <Setter Target="SecondGrid.Margin" Value="0 0 0 0"/>
+                            <Setter Target="SecondGrid.(Grid.Column)" Value="1"/>
+                            <Setter Target="SecondGrid.(Grid.Row)" Value="0"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="NarrowState">
+                        <VisualState.StateTriggers>
+                            <AdaptiveTrigger MinWindowWidth="0" />
+                        </VisualState.StateTriggers>
+                        <VisualState.Setters>
+                            <Setter Target="RegistracijaGrid.Margin" Value="0"/>
+                            <Setter Target="FirstGrid.Margin" Value="0 0 0 0"/>
+                            <Setter Target="SecondGrid.Margin" Value="0 0 0 0"/>
+                            <Setter Target="RegistracijaGrid.RowDefinitions[1].Height" Value="*"/>
+                            <Setter Target="RegistracijaGrid.ColumnDefinitions[1].Width" Value="auto"/>
+                            <Setter Target="SecondGrid.(Grid.Column)" Value="0"/>
+                            <Setter Target="SecondGrid.(Grid.Row)" Value="1"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+
+
+         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="145,35,0,0" TextWrapping="Wrap" Text="Registracija novih korisnika" VerticalAlignment="Top" Height="35" Width="367" FontSize="26.667" FontWeight="Bold" FontStyle="Italic"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="35,93,0,0" TextWrapping="Wrap" Text="Unesite ime:" VerticalAlignment="Top" Height="21" Width="105"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="30,150,0,0" TextWrapping="Wrap" Text="Unesite prezime:" VerticalAlignment="Top" Height="24" Width="110"/>
         <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="35,206,0,0" TextWrapping="Wrap" Text="Unesite ID:" VerticalAlignment="Top" Height="19" Width="78"/>
@@ -30,4 +66,6 @@
         <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="467,225,0,0" TextWrapping="Wrap" Text="AircraftECS Team" VerticalAlignment="Top" Width="133" Height="32" FontStyle="Italic"/>
 
     </Grid>
+    </Grid>
+
 </Page>
