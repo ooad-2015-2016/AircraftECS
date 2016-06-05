@@ -7,7 +7,43 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Grid x:Name="PosadaGrid" ScrollViewer.VerticalScrollBarVisibility="Auto">
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-150,0">
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="WideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="720" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="PosadaGrid.Margin" Value="0"/>
+                        <Setter Target="PosadaGrid.RowDefinitions[1].Height" Value="auto"/>
+                        <Setter Target="PosadaGrid.ColumnDefinitions[1].Width" Value="*"/>
+                        <Setter Target="FirstGrid.Margin" Value="0 0 0 0"/>
+                        <Setter Target="SecondGrid.Margin" Value="0 0 0 0"/>
+                        <Setter Target="SecondGrid.(Grid.Column)" Value="1"/>
+                        <Setter Target="SecondGrid.(Grid.Row)" Value="0"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="NarrowState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="PosadaGrid.Margin" Value="0"/>
+                        <Setter Target="FirstGrid.Margin" Value="0 0 0 0"/>
+                        <Setter Target="SecondGrid.Margin" Value="0 0 0 0"/>
+                        <Setter Target="PosadaGrid.RowDefinitions[1].Height" Value="*"/>
+                        <Setter Target="PosadaGrid.ColumnDefinitions[1].Width" Value="auto"/>
+                        <Setter Target="SecondGrid.(Grid.Column)" Value="0"/>
+                        <Setter Target="SecondGrid.(Grid.Row)" Value="1"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+
         <Grid.RowDefinitions>
             <RowDefinition Height="23*"/>
             <RowDefinition Height="37*"/>
@@ -30,4 +66,6 @@
         <Button x:Name="button2" Content="Registracija" HorizontalAlignment="Left" Margin="522,117,0,0" Grid.Row="1" VerticalAlignment="Top" Click="button2_Click"/>
 
     </Grid>
+    </Grid>
+
 </Page>
