@@ -1,0 +1,55 @@
+int led = 8;
+double potenciometar = A0;
+int kontr = 0;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(led, OUTPUT);
+  pinMode(potenciometar, INPUT);
+  Serial.begin(9600);
+
+  while (!Serial) 
+  {
+      ; // wait for serial port to connect. Needed for native USB port only 
+  }
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  if(Serial.available() > 0)
+  {
+    //Dolazni bit
+   int inByte = Serial.read();
+
+    if(inByte == '1' && kontr ==0) {
+    
+      digitalWrite(led, HIGH);
+      delay(5000);
+      digitalWrite(led, LOW);
+      Serial.end();
+      delay(100);
+      Serial.begin(9600);
+      delay(300);
+      kontr = 1;
+      
+     
+    }
+
+    else {
+      digitalWrite(led, LOW);
+      //Iskljuci se dioda ako nije poslano iz Visual Studia
+      //I pauza
+      delay(1000);
+     
+    }
+  }
+
+  delay(2000);
+  //Citanje vrijednosti sa senzora
+  potenciometar = analogRead(A0);
+  double napon = potenciometar*(5.0/1023.0);
+  Serial.print(napon);
+ 
+}

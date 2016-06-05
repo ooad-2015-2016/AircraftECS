@@ -223,8 +223,9 @@ namespace Official.Views
                 ProgressTemperatura.Value = Convert.ToDouble(PrikazTemperatura.Text);
                 ProgressPritisak.Value = Convert.ToDouble(PrikazPritiska.Text);
 
+                ViewModels.PrikazParametaraViewModel var = new ViewModels.PrikazParametaraViewModel();
 
-                if (Convert.ToDouble(PrikazBrzine.Text) > 3 || Convert.ToDouble(PrikazBrzine.Text) < 1)
+                if (Convert.ToDouble(PrikazBrzine.Text) > var.DajGornju() || Convert.ToDouble(PrikazBrzine.Text) < var.DajDonju())
                     {
                     UpaliDiodu();
                     //UgasiDiodu();
