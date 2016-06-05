@@ -109,16 +109,11 @@
       <DependentUpon>20160602151459_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ClanPosadeDbContextModelSnapshot.cs" />
-    <Compile Include="Models\Alarm.cs" />
     <Compile Include="Models\BazaParametara.cs" />
     <Compile Include="Models\DataSource.cs" />
     <Compile Include="Models\Korisnik.cs" />
-    <Compile Include="Models\KursLeta.cs" />
     <Compile Include="Models\Parametri.cs" />
-    <Compile Include="Models\Putnik.cs" />
-    <Compile Include="Models\SistemUpravljanja.cs" />
     <Compile Include="Models\Pilot.cs" />
-    <Compile Include="Models\TipUpravljanja.cs" />
     <Compile Include="PosadaBaza\Models\ClanPosade.cs" />
     <Compile Include="PosadaBaza\Models\ClanPosadeDbContext.cs" />
     <Compile Include="PosadaBaza\Models\DefaultPodaci.cs" />
@@ -126,13 +121,9 @@
       <DependentUpon>RegistracijaClana.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\AlarmViewModel.cs" />
-    <Compile Include="ViewModels\Arduino.cs" />
     <Compile Include="ViewModels\PrikazParametaraViewModel.cs" />
-    <Compile Include="ViewModels\ProvjeraNapona.cs" />
     <Compile Include="ViewModels\ProvjeritiKorisnika.cs" />
     <Compile Include="ViewModels\UnosParametaraViewModel.cs" />
-    <Compile Include="ViewModels\UnosPosadeViewModel.cs" />
     <Compile Include="Views\Alarm.xaml.cs">
       <DependentUpon>Alarm.xaml</DependentUpon>
     </Compile>
