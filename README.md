@@ -90,7 +90,7 @@ dozvoljava polijetanje aviona tek kada je svaki od putnika vezan sigurnosnim poj
 
 ##3.Prilagodjavanje windows phone
 
-   Nije uradjeno, aplikacija nije predvidjena za windows phone
+   Adaptive Layout nije uradjen na formama
 
 4##.Video
 
