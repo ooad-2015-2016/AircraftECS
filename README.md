@@ -88,9 +88,10 @@ dozvoljava polijetanje aviona tek kada je svaki od putnika vezan sigurnosnim poj
    - (https://github.com/ooad-2015-2016/AircraftECS/blob/master/Projekat/Official/Official%20projekat/Official/Views/UnosParametara.xaml.cs)
    - (https://github.com/ooad-2015-2016/AircraftECS/blob/master/Projekat/Official/Official%20projekat/Official/Views/Registracija.xaml.cs)
 
-##3.Prilagodjavanje windows phone
+##3.Adaptive layout
 
-   Adaptive Layout nije uradjen na formama
+   Samo na nekim formama je uradjen adaptive layout.
+   - (https://github.com/ooad-2015-2016/AircraftECS/blob/master/Projekat/Official/Official%20projekat/Official/Views/UnosPosade.xaml)
 
 4##.Video
 
