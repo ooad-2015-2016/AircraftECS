@@ -208,6 +208,7 @@ namespace Official.Views
                                                                                      //listView.Items.Add(procitanaVrijednost);
                                                                                      //Official.Views.PrikazParametara.PrikazBrzine.Text = procitanaVrijednost;
                 PrikazBrzine.Text = procitanaVrijednost;
+                ProgressBrzina.Value = Convert.ToDouble(PrikazBrzine.Text);
 
                 PrikazVisine.Text = Official.ViewModels.UnosParametaraViewModel.DajVisinu().ToString();
                 PrikazKursa.Text = Official.ViewModels.UnosParametaraViewModel.DajKurs().ToString();
@@ -215,8 +216,15 @@ namespace Official.Views
                 PrikazTemperatura.Text = Official.ViewModels.UnosParametaraViewModel.DajTemperaturu().ToString();
                 PrikazPritiska.Text = Official.ViewModels.UnosParametaraViewModel.DajPritisak().ToString();
 
-                
-                if (Convert.ToDouble(PrikazBrzine.Text) > 3 || Convert.ToDouble(PrikazBrzine.Text) < 2)
+                //ProgressBar prikaz
+                ProgressVisina.Value = Convert.ToDouble(PrikazVisine.Text);
+                ProgressKurs.Value = Convert.ToDouble(PrikazKursa.Text);
+                ProgressUgaoKrila.Value = Convert.ToDouble(PrikazUgaoKrila.Text);
+                ProgressTemperatura.Value = Convert.ToDouble(PrikazTemperatura.Text);
+                ProgressPritisak.Value = Convert.ToDouble(PrikazPritiska.Text);
+
+
+                if (Convert.ToDouble(PrikazBrzine.Text) > 3 || Convert.ToDouble(PrikazBrzine.Text) < 1)
                     {
                     UpaliDiodu();
                     //UgasiDiodu();
@@ -257,36 +265,6 @@ namespace Official.Views
 
         }
 
-        private void ProgressBar_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
-        {
-                  
-        }
-
-        private void ProgressBar_ValueChanged_1(object sender, RangeBaseValueChangedEventArgs e)
-        {
-
-        }
-
-        private void ProgressBar_ValueChanged_2(object sender, RangeBaseValueChangedEventArgs e)
-        {
-
-        }
-
-        private void ProgressBar_ValueChanged_3(object sender, RangeBaseValueChangedEventArgs e)
-        {
-
-        }
-
-        private void ProgressBar_ValueChanged_4(object sender, RangeBaseValueChangedEventArgs e)
-        {
-
-        }
-
-        private void ProgressBar_ValueChanged_5(object sender, RangeBaseValueChangedEventArgs e)
-        {
-
-        }
-
         private void button_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Help));
@@ -300,6 +278,36 @@ namespace Official.Views
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             
+
+        }
+
+        private void Brzina_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+
+        }
+
+        private void Visina_ValueChanged_1(object sender, RangeBaseValueChangedEventArgs e)
+        {
+
+        }
+
+        private void Kurs_ValueChanged_2(object sender, RangeBaseValueChangedEventArgs e)
+        {
+
+        }
+
+        private void UgaoKrila_ValueChanged_3(object sender, RangeBaseValueChangedEventArgs e)
+        {
+
+        }
+
+        private void Temperatura_ValueChanged_4(object sender, RangeBaseValueChangedEventArgs e)
+        {
+
+        }
+
+        private void Pritisak_ValueChanged_5(object sender, RangeBaseValueChangedEventArgs e)
+        {
 
         }
     }

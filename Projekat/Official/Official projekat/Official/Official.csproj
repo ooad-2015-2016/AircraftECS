@@ -156,6 +156,7 @@
     <None Include="Official_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\alarm1.png" />
     <Content Include="Assets\slika1.jpg" />
     <Content Include="Assets\slika2.jpg" />
     <Content Include="Assets\slika3.png" />

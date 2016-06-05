@@ -8,9 +8,9 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="78,116,0,0" TextWrapping="Wrap" Text="Doslo je do greske u regulaciji, prebacite na manuelno upravljanje " VerticalAlignment="Top" Height="106" Width="520" FontSize="29.333" FontWeight="Bold" FontStyle="Italic"/>
-        <Button x:Name="button" Content="Main Page" HorizontalAlignment="Left" Margin="389,227,0,0" VerticalAlignment="Top" Height="42" Width="111" Click="button_Click"/>
-        <Button x:Name="button1" Content="Ugasi diodu" HorizontalAlignment="Left" Margin="255,227,0,0" VerticalAlignment="Top" Height="42" Width="102" Click="button1_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="69,50,0,0" TextWrapping="Wrap" Text="Doslo je do greske u regulaciji, prebacite na manuelno upravljanje " VerticalAlignment="Top" Height="106" Width="520" FontSize="29.333" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="button" Content="Main Page" HorizontalAlignment="Left" Margin="444,191,0,0" VerticalAlignment="Top" Height="42" Width="111" Click="button_Click"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="194" Margin="108,156,0,0" VerticalAlignment="Top" Width="239" Source="ms-appx:///Assets/alarm1.png"/>
 
     </Grid>
 </Page>

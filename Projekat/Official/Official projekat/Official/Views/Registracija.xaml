@@ -16,11 +16,18 @@
         <TextBox x:Name="RegistrujIme" HorizontalAlignment="Left" Margin="145,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="21" Width="145" TextChanged="RegistrujIme_TextChanged"/>
         <TextBox x:Name="RegistrujPrezime" HorizontalAlignment="Left" Margin="145,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="145" TextChanged="RegistrujPrezime_TextChanged"/>
         <TextBox x:Name="RegistrujID" HorizontalAlignment="Left" Margin="145,193,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="32" Width="145" TextChanged="RegistrujID_TextChanged"/>
-        <Button x:Name="button1" Content="Unos posade" HorizontalAlignment="Left" Margin="494,262,0,0" VerticalAlignment="Top" Width="106" Click="button1_Click"/>
+        <Button x:Name="button1" Content="Unos posade" HorizontalAlignment="Left" Margin="492,262,0,0" VerticalAlignment="Top" Width="108" Click="button1_Click" Height="36"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="145,241,0,0" VerticalAlignment="Top" Width="145" Height="26" SelectionChanged="comboBox_SelectionChanged">
             <ComboBoxItem Content="Pilot" Height="100" Width="100"/>
             <ComboBoxItem Content="Stjuardesa" Height="100" Width="100"/>
         </ComboBox>
+        <RichTextBlock HorizontalAlignment="Left" Height="132" Margin="346,93,0,0" VerticalAlignment="Top" Width="254">
+            <Paragraph>
+                <Run Text="Na ovom mjestu možete izvršiti registraciju tako što ćete unijeti ime, prezime i ID što u ovom slučaju ima
+                     ulogu passworda i funkciju koju obnašate. Nakon izvršene registracije možete pristupiti aplikaciji.      AircraftECS team"/>
+            </Paragraph>
+        </RichTextBlock>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="467,225,0,0" TextWrapping="Wrap" Text="AircraftECS Team" VerticalAlignment="Top" Width="133" Height="32" FontStyle="Italic"/>
 
     </Grid>
 </Page>

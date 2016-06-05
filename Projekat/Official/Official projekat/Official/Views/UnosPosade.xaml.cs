@@ -55,7 +55,7 @@ namespace Official.Views
             }
 
             else {
-                var d = new MessageDialog("Uneseni su neispravni parametri, pokusajte ponovo");
+                var d = new MessageDialog("Uneseni su neispravni parametri, pokusajte ponovo ili izvrsite registraciju");
                 await d.ShowAsync();
             }
             
