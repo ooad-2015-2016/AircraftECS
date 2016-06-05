@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Official.ViewModels
+{
+    class ProvjeraNapona
+    {
+        public bool Provjeri(double napon)
+        {
+            
+            if(napon >3 || napon<1)
+            {
+                return true;
+            }
+            return false;
+        }
+    }
+}

@@ -10,10 +10,11 @@ using Windows.Storage.Streams;
 
 namespace Official.ViewModels
 {
-    class Arduino
+    
+    class Arduino 
     {
 
-        string procitanaVrijednost;
+        //public string procitanaVrijednost;
 
         //ovaj atribut koristite da pristupite serijskoj komunikaciji
         SerialDevice serialDevice;
@@ -25,7 +26,9 @@ namespace Official.ViewModels
         public Arduino()
         {
             InitializeSerial();
+            
         }
+        
         private async void InitializeSerial()
         {
             //Selector nadje device
@@ -190,7 +193,7 @@ namespace Official.ViewModels
             //ovdje radite sta vama vec treba: dataReaderObject.ReadString(bytesRead) je procitani text
             if (bytesRead > 0)
             {
-                procitanaVrijednost = dataReaderObject.ReadString(bytesRead); //ovim ispisujemo u listview
+               string PprocitanaVrijednost = dataReaderObject.ReadString(bytesRead); //ovim ispisujemo u listview
                                                                                      //Official.Views.PrikazParametara.PrikazBrzine.Text = (procitanaVrijednost); //dodajemo u listview podatke koji su dosli sa serijskog porta
                 //listView.Items.Add(procitanaVrijednost);
                 //Official.Views.PrikazParametara.PrikazBrzine.Text = procitanaVrijednost;

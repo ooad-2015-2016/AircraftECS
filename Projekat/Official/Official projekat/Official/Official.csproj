@@ -129,6 +129,7 @@
     <Compile Include="ViewModels\AlarmViewModel.cs" />
     <Compile Include="ViewModels\Arduino.cs" />
     <Compile Include="ViewModels\PrikazParametaraViewModel.cs" />
+    <Compile Include="ViewModels\ProvjeraNapona.cs" />
     <Compile Include="ViewModels\ProvjeritiKorisnika.cs" />
     <Compile Include="ViewModels\UnosParametaraViewModel.cs" />
     <Compile Include="ViewModels\UnosPosadeViewModel.cs" />

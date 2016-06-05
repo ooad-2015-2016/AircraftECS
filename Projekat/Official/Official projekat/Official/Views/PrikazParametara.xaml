@@ -30,7 +30,6 @@
         <Image x:Name="image" Source="/Assets/slika5.jpg" HorizontalAlignment="Left" Height="239" Margin="409,58,0,0" VerticalAlignment="Top" Width="213"/>
         <Button x:Name="button" Content="HELP" HorizontalAlignment="Left" Margin="463,320,0,0" VerticalAlignment="Top" Click="button_Click"/>
         <Button x:Name="button1" Content="BACK" HorizontalAlignment="Left" Margin="547,320,0,0" VerticalAlignment="Top" Click="button1_Click"/>
-        <Button x:Name="button2" Content="Prikazi" HorizontalAlignment="Left" Margin="370,318,0,0" VerticalAlignment="Top" Height="36" Width="63" Click="button2_Click"/>
 
     </Grid>
 </Page>
