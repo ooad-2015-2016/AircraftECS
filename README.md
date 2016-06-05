@@ -92,6 +92,7 @@ dozvoljava polijetanje aviona tek kada je svaki od putnika vezan sigurnosnim poj
 
    Samo na nekim formama je uradjen adaptive layout.
    - (https://github.com/ooad-2015-2016/AircraftECS/blob/master/Projekat/Official/Official%20projekat/Official/Views/UnosPosade.xaml)
+   - (https://github.com/ooad-2015-2016/AircraftECS/blob/master/Projekat/Official/Official%20projekat/Official/Views/Registracija.xaml)
 
 ##4.Video
 
